@@ -147,3 +147,11 @@ func Test_readUserInput(t *testing.T){
 // go tool cover -html=coverage.out
 // go test -coverprofile=coverage.out && go tool cover -html=coverage.out
 
+//Running a single test
+// go test -run [테스트 함수 명]
+// go test -v -run [테스트 함수 명]
+
+//Running groups of tests (test suites)
+// go test -run Test_[그룹명]
+// 예를 들어 Test_alpaha_isPrime, Test_alpha_prompt 가 있으면
+// go test -run Test_alpah 로 그룹을 테스트 할 수 있다.
