@@ -8,7 +8,7 @@ import (
 	"testing"
 )
 
-var app application
+
 
 func Test_application_addIPToContext(t *testing.T){
 	tests := []struct{
@@ -58,8 +58,6 @@ func Test_application_addIPToContext(t *testing.T){
 }
 
 func Test_application_ipFromContext(t *testing.T){
-	var app application
-
 	 ctx := context.Background()
 
 	 ctx = context.WithValue(ctx, CONTEXT_USER_KEY, "whatever")
